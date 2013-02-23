@@ -97,7 +97,7 @@ def main():
         print('appid Wrong Format, please login http://appengine.google.com to view the correct appid!')
         sys.exit(-1)
     for appid in appids.split('|'):
-        upload(os.environ.get('uploaddir', 'python').strip(), appid)
+        upload(os.environ.get('uploaddir', '_output').strip(), appid)
 
 if __name__ == '__main__':
    try:
